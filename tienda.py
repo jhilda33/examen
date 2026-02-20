@@ -16,13 +16,14 @@ class producto:
         return self.precio * self.cantidad
 
 #crear lista
-producto = []
+productos = []
 
 #agregar productos
 def agregar_producto():
     nombre = input("ingrese nombre del producto: ")
     precio = float(input("ingrese precio: "))
     cantidad = int(input("ingrese cantidad: "))
+
 
     nuevo_producto = Producto(nombre, precio, cantidad)
     productos.append(nuevo_producto)
